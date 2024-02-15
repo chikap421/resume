@@ -1,0 +1,272 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Chika Maduabuchi} \\ \vspace{1pt}
+    Cambridge 02139, MA, USA \\ \vspace{1pt}
+    \small \href{mailto:chikap421@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{chikap421@gmail.com}} ~ 
+    \href{https://github.com/chikap421}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/chikap421}} ~
+    \href{https://www.linkedin.com/in/chika-maduabuchi-4796701b1/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/chika-maduabuchi-4796701b1}} ~
+    \href{tel:+16178218696}{\raisebox{-0.2\height}\faPhone\ +1 617 821 8696}
+    \vspace{-8pt}
+\end{center}
+
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Massachusetts Institute of Technology}{2022 -- 2024}
+      {Master of Science in Nuclear Science and Engineering}{Cambridge, MA}
+      \resumeItemListStart
+        \resumeItem{Awarded \$91,000 research funding from Mathworks for developing computer vision models for autonomous boiling.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {University of Nigeria Nsukka}{2014 -- 2019}
+      {Bachelor of Engineering in Mechanical Engineering}{Nsukka, EN}
+  \resumeSubHeadingListEnd
+
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    \begin{multicols}{3}
+        \begin{itemize}[itemsep=-5pt, parsep=3pt]
+            \item\small Advanced Machine Learning
+            \item Modelling with Machine Learning
+            \item Advanced Numerical Methods
+            \item Advanced Calculus
+            \item Computer Programming
+            \item Complex Analysis
+            \item Probability and Statistics
+            \item Advanced Linear Algebra
+            \item Advanced Computational Methods
+        \end{itemize}
+    \end{multicols}
+    \vspace*{2.0\multicolsep}
+
+%------RESEARCH INTERESTS-------
+\section{Research Interests}
+    \begin{multicols}{2}
+        \begin{itemize}[itemsep=-5pt, parsep=3pt]
+            \item\small Machine Learning
+            \item Computer Vision
+            \item Natural Language Processing
+            \item Generative AI
+            \item Foundation Models
+            \item Reinforcement Learning
+        \end{itemize}
+    \end{multicols}
+    \vspace*{2.0\multicolsep}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {MIT Red Lab}{September 2022 -- Present}
+      {Research Fellow}{Cambridge, MA}
+      \resumeItemListStart
+        \resumeItem{Implemented transfer learning techniques using U-Net CNNs from \href{https://arxiv.org/abs/1505.04597}{\underline{pre-trained biological cell models}} to boiling videos for accurate segmentation (over 98\% Dice coefficients and Jaccard index) of bubbles to enable autonomous systems control.}
+        \resumeItem{Fine-tuned state-of-the-art vision transformer (ViT-H) foundation model, \href{https://arxiv.org/abs/2304.02643}{\underline{META SAM}}, on PyTorch to enhance generalization capabilities on new boiling images with complex patterns.}
+        \resumeItem{Quantified uncertainty in the vision model predictions by implementing a randomized sorting algorithm which evaluated the error on the boundaries of the model predictions.}
+        \resumeItem{Attended weekly group meetings and met my research advisor twice a week to share research updates and receive scholarly feedback.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Artificial Intelligence Laboratory}{October 2021 -- August 2022}
+      {Research Lead}{Nsukka, EN}
+      \resumeItemListStart
+            \resumeItem{Led a team of data scientists to implement neural networks, support vector machines, boosting and bagging ML models in scikit-learn to forecast global weather parameters and solar power in strategic cities across the 7 continents.}
+        \resumeItem{Conducted exploratory data analysis (EDA) and recursive feature elimination (RFE) on the 2 years time series data to determine the most relevant features for ML forecast of the system power and efficiency. }
+        \resumeItem{Tuned the models to give the best prediction output based on numerous regression performance metrics including the relative root mean squared error (RRMSE) and Pearson correlation coefficient ($R^2$)}
+        \resumeItem{Validated the ML forecasts with year ahead ground-truth data from NASA and submitted the developed manuscript for publication consideration in \href{https://www.sciencedirect.com/journal/engineering-applications-of-artificial-intelligence}{\underline{Engineering Applications of Artificial Intelligence}}.}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Generative AI - Diffusion Models} $|$ \emph{Python, PyTorch, CNNs, Einops}}{October 2023}
+          \resumeItemListStart
+            \resumeItem{Developed a PyTorch-based implementation of Denoising Diffusion Probabilistic Models (DDPMs) to generate high-quality samples from noise through a reverse noising process as an implementation of the paper by \href{https://arxiv.org/abs/2006.11239}{\underline{Ho et al.}} }
+            \resumeItem{Designed a custom U-Net CNN architecture with sinusoidal positional embedding to condition the denoising process on the diffusion timestep for effective image denoising on MNIST and Fashion-MNIST datasets.}
+            \resumeItem{Utilized a sophisticated training loop with noise application at random timesteps and hyperparameter optimization to ensure accurate noise prediction and efficient learning.}
+            \resumeItem{Created dynamic visualization tools for the diffusion process and model evaluation, offering intuitive insights into the model's generative capabilities and performance.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{Reinforcement Learning  - Policy Gradients} $|$ \emph{Python, PyTorch, gym-minigrid, ACModel}}{November 2023}
+          \resumeItemListStart
+            \resumeItem{Developed and implemented the REINFORCE algorithm using PyTorch by training the model to solve a door-key task in a custom MiniGrid environment.}
+            
+          \resumeItem{Designed and implemented an Actor-Critic model with convolutional neural networks for feature extraction and policy and value function approximation in PyTorch.}
+            \resumeItem{Conducted experiments with both REINFORCE and Vanilla Policy Gradient methods, incorporating baselines to reduce variance and improve learning stability through hyperparameter tuning.}
+            \resumeItem{Created utility functions for preprocessing observations, collecting experiences, and visualizing model performance, along with integrating \texttt{sensorimotor-checker} for testing algorithm correctness.}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          \resumeProjectHeading
+          {\textbf{Character-Level Language Modeling - GPT Architecture} $|$ \emph{Python, PyTorch, Transformers}}{December 2023}
+          \resumeItemListStart
+            \resumeItem{Engineered a character-level text generation model using PyTorch, encapsulating the core principles of Transformer architectures, to autonomously generate text in the style of Shakespeare with over 0.209 million parameters.}
+            \resumeItem{Implemented and optimized a simplified GPT-like architecture, including self-attention mechanisms, multi-head attention, and feedforward networks, tailored for understanding and generating Shakespearean text.}
+            \resumeItem{Employed character-to-index and index-to-character mappings ($stoi$ and $itos$) for efficient text encoding and decoding, facilitating the model's learning process from the Tiny Shakespeare dataset through supervised learning techniques.}
+            \resumeItem{Demonstrated the model's generative capabilities by training it to predict subsequent characters, achieving coherent text generation, and showcased through a custom text generation function post-training, the model’s ability to synthesize new textual content stylistically similar to the training dataset.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Machine Learning Libraries}{: PyTorch, scikit-learn, OpenCV, TensorFlow} \\
+     \textbf{Languages}{: Python, C++, JavaScript, HTML/CSS, MATLAB, R, SQL} \\
+     \textbf{Developer Tools}{: VS Code, Jupyter Notebook, Google Colab, CUDA, ImageJ/Fiji} \\
+     \textbf{Technologies/Frameworks}{: Linux, GitHub, Flask, AWS EC2} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+%-----------INVOLVEMENT---------------
+\section{Leadership / Extracurricular}
+    \resumeSubHeadingListStart
+        \resumeSubheading{Enrai}{Summer 2022 -- Present}{President}{University of Nigeria}
+            \resumeItemListStart
+                \resumeItem{Founded and lead Enrai, an organization dedicated to providing research experience in computer programming and optimization, focusing on solving societal problems and contributing to open-source projects.}
+                \resumeItem{Direct and mentor a diverse team of 10+ members, fostering a collaborative environment to enhance skills in advanced computational techniques and real-world problem-solving.}
+                \resumeItem{Successfully guided three members through comprehensive research projects and skill development, resulting in their acceptance into fully-funded Ph.D. programs at prestigious universities in the United States.}
+            \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+
+
+\end{document}

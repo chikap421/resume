@@ -215,13 +215,12 @@
           \resumeItemListEnd
           \vspace{-13pt}
       \resumeProjectHeading
-          {\textbf{Reinforcement Learning  - Policy Gradients} $|$ \emph{Python, PyTorch, gym-minigrid, ACModel}}{November 2023}
+          {\textbf{PoS Tagging with Layer Freezing Strategies} $|$ \emph{Python, DistilBERT Transformers}}{February 2024}
           \resumeItemListStart
-            \resumeItem{Developed and implemented the REINFORCE algorithm using PyTorch by training the model to solve a door-key task in a custom MiniGrid environment.}
-            
-          \resumeItem{Designed and implemented an Actor-Critic model with convolutional neural networks for feature extraction and policy and value function approximation in PyTorch.}
-            \resumeItem{Conducted experiments with both REINFORCE and Vanilla Policy Gradient methods, incorporating baselines to reduce variance and improve learning stability through hyperparameter tuning.}
-            \resumeItem{Created utility functions for preprocessing observations, collecting experiences, and visualizing model performance, along with integrating \texttt{sensorimotor-checker} for testing algorithm correctness.}
+            \resumeItem{Investigated the impact of partial layer freezing on DistilBERT's performance for PoS tagging using the Universal Dependencies dataset.}
+            \resumeItem{Developed and evaluated two freezing strategies: Single Layer Partial Freezing (SLPF) where individual layers were frozen, and Compound Layer Partial Freezing (CLPF) freezing consecutive layers from the model's bottom up.}
+            \resumeItem{Utilized DistilBert Transformers for model implementation and fine-tuning, and Matplotlib for visual analysis of model accuracies across different configurations.}
+            \resumeItem{Demonstrated through systematic experimentation and visualization that selective layer freezing can variably affect PoS tagging accuracy, with some configurations outperforming the baseline model.}
           \resumeItemListEnd 
           \vspace{-13pt}
           \resumeProjectHeading
